@@ -1,0 +1,34 @@
+main{
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: large;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.main_button:hover{
+    transition: ease 0.5s;
+    background-color: darkorchid;
+}
+.main_button:active{
+    background-color: darkslateblue;
+}
+button{
+    border: none;
+    outline: none;
+    box-shadow: 3px 3px 5px black;
+    border-radius: 10px;
+    width: 250px;
+    height: 30px;
+}
