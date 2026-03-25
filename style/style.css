@@ -3,6 +3,7 @@
     --buttons-color: #7B2CBF;
     --card-background-color: #3C096C;
     --pizza-background-color: #9D4EDD;
+    --header-font-color: #F1D6FF;
     --main-bg-img: url("/img/71feb1f61de308e700821baa0e9c5e47.jpg");
 }
 body{
@@ -99,7 +100,7 @@ main{
 .news-header{
     display: flex;
     text-align: center;
-    color: white;
+    color: var(--header-font-color);
     font-size: 4rem;
 }
 .news-card{
@@ -128,7 +129,7 @@ main{
 }
 .pizza h2, .furnace h2{
     font-size: 4rem;
-    color: white;
+    color: var(--header-font-color);
     margin: 1rem 0;
 }
 .pizza p, .furnace p{
@@ -158,13 +159,31 @@ main{
 }
 
 .furnace img{
-    max-width: 60%;
+    max-width: 65%;
     height: auto;
     max-height: 100%;
 }
 .furnace img:hover{
     transform: scale(1.1);
     transition: 0.2s;
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 10vh;
+    height: 70vh;
+}
+.about h2{
+    font-size: 5rem;
+    color: var(--header-font-color);
+    text-align: center;
+}
+.about p{
+    color: #C77DFF;
+    font-size: 2.5rem;
+    margin: 0.3rem;
 }
 @media (max-width: 900px) {
     .main-img, .pizza-section-img, .furnace img{
@@ -196,6 +215,15 @@ main{
         text-align: center;
     }
     .furnace{
-        height: 45vh;
+        height: 60vh;
+    }
+    .furnace p{
+        margin: 0;
+    }
+    .about h2, .furnace h2, .pizza h2{
+        font-size: 3.5rem;
+    }
+    .about p, .furnace p, .pizza p{
+        font-size: 1.5rem;
     }
 }
