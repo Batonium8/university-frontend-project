@@ -13,7 +13,7 @@ body{
     background-color: #240046;
     font-family: 'Montserrat', sans-serif;
 }
-ul li {
+ul,li,a{
     text-decoration: none;
     list-style: none;
 }
@@ -36,6 +36,12 @@ header{
     justify-content: space-between;
     align-items: center;
     gap: 2rem;
+}
+header a{
+    color: #F1D6FF;
+}
+header a:hover{
+    color: #D699FF;
 }
 main{
     height: 95vh;
@@ -72,10 +78,10 @@ main{
     border-radius: 16px;
     min-width: clamp(2em, 25%, 30%);
 }
-.main-button:hover{
-    background-color: #5A189A;
-    transition: 0.2s;
+.main-button a{
+    color: #F1D6FF;
 }
+
 .buttons-block{
     display: flex;
     justify-content: start;
@@ -173,7 +179,7 @@ main{
     align-items: center;
     gap: 1rem;
     margin-top: 10vh;
-    height: 70vh;
+    height: 90vh;
 }
 .about h2{
     font-size: 5rem;
@@ -184,6 +190,42 @@ main{
     color: #C77DFF;
     font-size: 2.5rem;
     margin: 0.3rem;
+    text-align: center;
+}
+button:hover{
+    background-color: #5A189A;
+    transition: 0.2s;
+}
+footer{
+    background-color: var(--header-color);
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    border-top: 0.2rem solid #E8C2FF;
+}
+footer h2{
+    font-size: 2rem;
+    color: var(--header-font-color);
+}
+footer p{
+    color: white;
+    font-size: 1.2rem;
+}
+.footer-map{
+    height: 80%;
+    width: 50%;
+}
+.icons{
+    display: flex;
+    justify-content: start;
+    gap: 1rem;
+    align-items: center;
+}
+.icons img{
+    width: 3rem;
+    height: 3rem;
 }
 @media (max-width: 900px) {
     .main-img, .pizza-section-img, .furnace img{
@@ -225,5 +267,8 @@ main{
     }
     .about p, .furnace p, .pizza p{
         font-size: 1.5rem;
+    }
+    .footer-map{
+        display: none;
     }
 }
